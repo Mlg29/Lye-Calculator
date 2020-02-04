@@ -1,0 +1,56 @@
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ingredient-input1 {
+    width: 25%;
+    padding: 10px;
+    margin-right: 5%;
+    margin-left: 15%;
+    
+}
+.ingredient-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.ingredient-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+}
+.ingredient-div-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .ingredient-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .ingredient-div-div {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        /* justify-content: flex-start; */
+    }
+    .ingredient-input1 {
+        padding: 0%;
+        width: 20%;
+    }
+    label {
+        margin-right: 15%;
+    }
+}

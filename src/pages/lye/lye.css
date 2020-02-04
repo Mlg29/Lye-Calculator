@@ -1,0 +1,151 @@
+
+.lye {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.lye-header {
+    font-size: 40px;
+}
+.lye-paragraph {
+    font-size: 25px;
+    color: grey;
+    font-weight: normal;
+}
+.lye-paragraph2 {
+    font-size: 15px;
+    color: rgb(54, 53, 53);
+    line-height: 30px;
+    font-weight: normal;
+}
+.lye-div2 {
+    width: 50%;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.lye-btn1 {
+    padding: 15px;
+    color: white;
+    border: none;
+    background: rgb(168, 19, 44);
+}
+.lye-btn2 {
+    padding: 15px;
+    color: rgb(168, 19, 44);
+    border: none;
+    margin-left: 1%;
+    border: 1px solid rgb(168, 19, 44);
+    background: white;
+}
+.form {
+    border: 1px solid gray;
+    width: 60%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-div {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.select1 {
+    padding: 10px;
+    width: 70%;
+}
+.select2 {
+    padding: 10px;
+    width: 70%;
+    margin-top: 3%;
+}
+.select3 {
+    padding: 10px;
+    width: 70%;
+    margin-top: 3%;
+}
+.type-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+}
+.type-div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.type-div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    margin-top: -5%;
+    width: 100%;
+}
+.type-div4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    margin-top: 0%;
+    width: 100%;
+}
+.required {
+    display: flex;
+    margin-left: -50%;
+    margin-bottom: 0.5%;
+    color: red;
+}
+.required2 {
+    display: flex;
+    margin-left: -50%;
+    margin-bottom: -3%;
+    color: red;
+}
+.required3 {
+    display: flex;
+    margin-left: -50%;
+    margin-top: 7%;
+    margin-bottom: -3%;
+    color: red;
+}
+.button-hidden {
+    display: block;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .lye-paragraph {
+        text-align: center;
+    }
+    .lye-div2 {
+        width: 100%;
+    }
+    .lye-paragraph2 {
+        width: 100%;
+    }
+    .form {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 5%;
+        padding-bottom: 3%;
+    }
+}
