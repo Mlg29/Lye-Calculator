@@ -36,7 +36,8 @@
     padding: 15px;
     color: white;
     border: none;
-    background: rgb(168, 19, 44);
+    border-radius: 5px;
+    background: #81b7b6;
 }
 .lye-btn2 {
     padding: 15px;

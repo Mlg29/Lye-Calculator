@@ -92,7 +92,7 @@ class Ingredient extends React.Component {
             <div className="ingredient">
                 
                 <h1>INGREDIENTS</h1>
-                <p>What are your ingredient amounts by weight( measured in grams)</p>
+                <p>What are your Oil ingredient amounts by weight( measured in grams)</p>
                 
                     <div className="ingredient-div">
                         <div className="ingredient-div-div"><label>Almond</label><input name="almond" value={almond} onChange={this.handleChange} className="ingredient-input1" type="text"/></div>

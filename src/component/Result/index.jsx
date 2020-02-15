@@ -27,12 +27,14 @@ class Result extends React.Component {
 
         function fragnance() {
                 switch(fragrance) {
+                case 'None':
+                    return Math.floor(totalOil * 0)
                 case "Light":
-                    return Math.floor(totalOil / 2)
+                    return Math.floor(totalOil * ( 2 / 100) )
                 case "Medium":
-                    return Math.floor(totalOil / 3.5)
+                    return Math.floor(totalOil * ( 3.5 / 100) )
                 case "Strong":
-                    return Math.floor(totalOil / 5 )
+                    return Math.floor(totalOil * ( 5 / 100) )
                 default:
                     break
 
@@ -58,7 +60,7 @@ class Result extends React.Component {
                 <p className="result-paragraph3">Superfatting Discount: <strong>
                     {
                         type === "Liquid" ? Math.floor(superfattingValueLiquid) : Math.floor(superfattingValueSolid) 
-                    }g
+                    }%
                     </strong>                  
                 </p>
                 <p className="result-paragraph2">Amount of Fragrance: <strong>
@@ -67,7 +69,7 @@ class Result extends React.Component {
                     }g
                     </strong>                  
                 </p>
-                <p className="result-paragraph3">Total Oil: <strong>
+                <p className="result-paragraph3">Total Batch Size: <strong>
                     {totalOil}g
                     </strong>                  
                 </p>
