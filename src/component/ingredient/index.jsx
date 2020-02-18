@@ -86,7 +86,7 @@ class Ingredient extends React.Component {
         const superfattingValueLiquid = totalAmountOfLyeLiquid * (1 - (level / 100))
         
         const totalOil = (almond * 1) + (aloeVera * 1) + (apricot * 1 ) + (avocado * 1 ) + (babassu * 1) + (baobab * 1) + (blackCumin * 1) + (blackCurrant * 1) + (borage * 1) + (brazilNut * 1) + (camelina * 1) + (canola * 1) + (castor * 1) + (cherryKernel * 1) + (cottenseed * 1) + (cocoaButter * 1) + (coconut * 1) + (corn * 1) + (cranberrySeed * 1) + (emu * 1) + (eveningPrimrose * 1) + (flax * 1) + (grapeSeed *1) + (hazelnut * 1) + (illipeButter * 1) + (jojoba * 1) + (kiwiSeed * 1) + (kokumButter * 1) + (kukuiNut * 1) + (lard * 1) + (macadamiaNut * 1) + (mangoButter * 1) + (marulaOil * 1) + (mowrahButter * 1) + (neem * 1) + (olive * 1) + (palm * 1) + (palmKernel * 1) + (peanut * 1) 
-       
+        
        
         return (
             <div className="ingredient">
@@ -109,12 +109,12 @@ class Ingredient extends React.Component {
                     </div>
                                     <div className="ingredient-div">
                                         <div className="ingredient-div-div"><label>Black Cumin</label><input  name="blackCumin" value={blackCumin} onChange={this.handleChange} className="ingredient-input1"  type="text" /></div>
-                                        <div className="ingredient-div-div"><label>Blackcurrant</label><input  name="blackCurrent" value={blackCurrant} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label>Blackcurrant</label><input  name="blackCurrant" value={blackCurrant} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                        <div className="ingredient-div-div"><label>Borage</label><input  name="barage" value={borage} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label>Borage</label><input  name="borage" value={borage} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         <div className="ingredient-div-div"><label>Brazil Nut</label><input  name="brazilNut" value={brazilNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                         

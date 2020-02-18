@@ -14,7 +14,21 @@ class Result extends React.Component {
     }
    
     render() {
+        const {
+            type,
+            level,
+            measure,
+            fragrance,
+            totalAmountOfLyeSolid,
+            totalAmountOfWaterSolid,
+            superfattingValueSolid,     
+            totalAmountOfLyeLiquid,
+            totalAmountOfWaterLiquid,
+            superfattingValueLiquid ,
+            totalOil, 
+        } = this.props
         
+       
         return (
            
         <div>
@@ -22,8 +36,19 @@ class Result extends React.Component {
           trigger={() => <a href="#">Print this out!</a>}
           content={() => this.componentRef}
         />
-        <ComponentToPrint ref={el => (this.componentRef = el)}
-           
+        <ComponentToPrint 
+            ref={el => (this.componentRef = el)}
+                type = {type}
+                level={level}
+                measure={measure}
+                fragrance={fragrance}
+                totalAmountOfLyeSolid = {totalAmountOfLyeSolid}
+                totalAmountOfWaterSolid = {totalAmountOfWaterSolid}
+                superfattingValueSolid =   {superfattingValueSolid}
+                totalAmountOfLyeLiquid = {totalAmountOfLyeLiquid}
+                totalAmountOfWaterLiquid = {totalAmountOfWaterLiquid}
+                superfattingValueLiquid = {superfattingValueLiquid}
+                totalOil = {totalOil}
         />
       </div>
             
@@ -60,21 +85,23 @@ class ComponentToPrint extends React.Component {
             totalOil, 
         } = this.props
 
-        function fragnance() {
-                switch(fragrance) {
-                case "None":
-                    return Math.floor(totalOil/1)
-                case "Light":
-                    return Math.floor(totalOil / 2)
-                case "Medium":
-                    return Math.floor(totalOil / 3.5)
-                case "Strong":
-                    return Math.floor(totalOil / 5 )
-                default:
-                    break
 
-            }
-        }
+            function fragnance() {
+                            switch(fragrance) {
+                            case "None":
+                                return Math.floor(totalOil * (0 / 100) )
+                            case "Light":
+                                return Math.floor(totalOil * (2 / 100))
+                            case "Medium":
+                                return Math.floor(totalOil * ( 3.5 / 100))
+                            case "Strong":
+                                return Math.floor(totalOil * (5 / 100) )
+                            default:
+                                break
+
+                        }
+                    }
+
         
         return (
             <div className="result">
@@ -104,8 +131,15 @@ class ComponentToPrint extends React.Component {
                     }g
                     </strong>                  
                 </p>
-                <p className="result-paragraph3">Total Batch Size: <strong>
+                <p className="result-paragraph3">Total Oil: <strong>
                     {totalOil}g
+                    </strong>                  
+                </p>
+                <p className="result-paragraph2">Total Batch Size: <strong>
+                    { 
+                        type === 'Solid' ? Math.floor(totalOil + totalAmountOfLyeSolid + totalAmountOfWaterSolid + (fragnance())) :  Math.floor(totalOil + totalAmountOfLyeLiquid + totalAmountOfWaterLiquid + (fragnance()))
+                    
+                    }g
                     </strong>                  
                 </p>
                 

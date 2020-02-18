@@ -43,6 +43,7 @@
     .ingredient-div-div {
         display: flex;
         flex-direction: row-reverse;
+        margin-bottom: 5%;
         width: 100%;
         /* justify-content: flex-start; */
     }
