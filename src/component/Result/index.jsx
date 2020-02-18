@@ -73,6 +73,7 @@ class Result extends React.Component {
                     {totalOil}g
                     </strong>                  
                 </p>
+                
             </div>
         )
     }
