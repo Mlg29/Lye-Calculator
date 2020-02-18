@@ -1,8 +1,43 @@
 import React from "react"
 import "./Result.css"
+import ReactToPrint from 'react-to-print';
 
+
+ 
 
 class Result extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            
+        }
+    }
+   
+    render() {
+        
+        return (
+           
+        <div>
+        <ReactToPrint
+          trigger={() => <a href="#">Print this out!</a>}
+          content={() => this.componentRef}
+        />
+        <ComponentToPrint ref={el => (this.componentRef = el)}
+           
+        />
+      </div>
+            
+
+        )
+       
+      
+    }
+    
+}
+
+export default Result
+
+class ComponentToPrint extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -27,14 +62,14 @@ class Result extends React.Component {
 
         function fragnance() {
                 switch(fragrance) {
-                case 'None':
-                    return Math.floor(totalOil * 0)
+                case "None":
+                    return Math.floor(totalOil/1)
                 case "Light":
-                    return Math.floor(totalOil * ( 2 / 100) )
+                    return Math.floor(totalOil / 2)
                 case "Medium":
-                    return Math.floor(totalOil * ( 3.5 / 100) )
+                    return Math.floor(totalOil / 3.5)
                 case "Strong":
-                    return Math.floor(totalOil * ( 5 / 100) )
+                    return Math.floor(totalOil / 5 )
                 default:
                     break
 
@@ -77,7 +112,5 @@ class Result extends React.Component {
             </div>
         )
     }
-    
+  
 }
-
-export default Result
