@@ -108,9 +108,9 @@ class ComponentToPrint extends React.Component {
                     <header className="result-header">Result</header>
                     <h5 className="result-header2"> A <b>{type}</b> soap, measured in <b>{measure}</b> with superfat of <b>{level}%</b> using a <b>{fragrance}</b> Fragrance strength</h5>
                  <p className="result-paragraph">Total Amount of Lye Needed: <strong>
-                     {
-                        type === "Liquid" ? Math.floor(totalAmountOfLyeLiquid) : Math.floor(totalAmountOfLyeSolid)
-                     }g
+                    {
+                        type === "Liquid" ? Math.floor(superfattingValueLiquid) : Math.floor(superfattingValueSolid) 
+                    }g
                      </strong>
                 </p>
                 <p className="result-paragraph2">Total Amount of Water Needed:<strong>
@@ -119,23 +119,17 @@ class ComponentToPrint extends React.Component {
                     }g
                     </strong>                                                                               
                 </p>
-                <p className="result-paragraph3">Superfatting Discount: <strong>
-                    {
-                        type === "Liquid" ? Math.floor(superfattingValueLiquid) : Math.floor(superfattingValueSolid) 
-                    }%
-                    </strong>                  
-                </p>
-                <p className="result-paragraph2">Amount of Fragrance: <strong>
+                <p className="result-paragraph3">Amount of Fragrance: <strong>
                     {
                       fragnance()
                     }g
                     </strong>                  
                 </p>
-                <p className="result-paragraph3">Total Oil: <strong>
+                <p className="result-paragraph2">Oil Selected: <strong>
                     {totalOil}g
                     </strong>                  
                 </p>
-                <p className="result-paragraph2">Total Batch Size: <strong>
+                <p className="result-paragraph3">Total Batch Size: <strong>
                     { 
                         type === 'Solid' ? Math.floor(totalOil + totalAmountOfLyeSolid + totalAmountOfWaterSolid + (fragnance())) :  Math.floor(totalOil + totalAmountOfLyeLiquid + totalAmountOfWaterLiquid + (fragnance()))
                     
