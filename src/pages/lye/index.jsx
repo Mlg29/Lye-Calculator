@@ -39,17 +39,17 @@ class Lye extends React.Component {
                
                 <p className="lye-paragraph">Calculate your lye or fragrance amounts for the perfect batch!</p>
                 <div className="btn">
-                    <button className="lye-btn1">LYE CALCULATOR</button>
+                <h2 className="lye-btn7">LYE CALCULATOR</h2>
                    
                 </div>
-                <h2 className="lye-header2">Lye Calculator</h2>
+                
                 <div className="lye-div2">
-                    <p className="lye-paragraph2">Calculating the amount of lye you need for your next soap recipe is as easy as 1-2-3</p>
-                    <p className="lye-paragraph2">*Please note: The Genesis formulab Lye Calculator assumes a 90% 
+                    <p className="lye-paragraph2">Calculate the amount of lye and fragrance that you need to make beautiful soaps.</p>
+                    <p className="lye-paragraph2">*Note: Genesis Formulab Lye Calculator assumes a 90% 
                         purity for Potassium Hydroxide (liquid soapmaking) and 97%
                         purity for Sodium Hydroxide (solid bar soapmaking). These 
-                        purity levels are what are commonly available for sale to 
-                        consumers, including the lye sold at Genesis formulab.
+                        are generally available from most suppliers. You may also notice slight difference in calculations from
+                        harvest to harvest. Genesis Formulab Lye Calculator uses the average values from what is most prevalent.
                     </p>
                 </div>
                 
@@ -82,7 +82,7 @@ class Lye extends React.Component {
                             }
                             <select name="level" value={level} onChange={this.handleClick} className="select3" required>
                                 <option value="">Superfatting Level( In %)</option>
-                                <option value="none">None</option>
+                                <option value="0">0</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -99,6 +99,7 @@ class Lye extends React.Component {
                             }
                             <select name="fragrance" value={fragrance} onChange={this.handleClick} className="select2" required>
                                 <option value="">Fragrance Strength</option>
+                                <option value="None">None</option>
                                 <option value="Light">Light</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Strong">Strong</option>

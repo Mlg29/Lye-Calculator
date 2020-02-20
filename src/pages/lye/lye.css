@@ -30,13 +30,15 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    background-color: #81b7b6;
 }
 
 .lye-btn1 {
     padding: 15px;
     color: white;
     border: none;
-    background: rgb(168, 19, 44);
+    border-radius: 5px;
+    background: #81b7b6;
 }
 .lye-btn2 {
     padding: 15px;
@@ -46,7 +48,19 @@
     border: 1px solid rgb(168, 19, 44);
     background: white;
 }
+.lye-btn3 {
+    border: none;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+.lye-btn7 {
+   
+    color: white;
+    
+}
 .form {
+    background-color: #81b7b6;
     border: 1px solid gray;
     width: 60%;
     margin-top: 3%;
@@ -71,6 +85,7 @@
     width: 70%;
     margin-top: 3%;
 }
+
 .select3 {
     padding: 10px;
     width: 70%;
@@ -147,5 +162,8 @@
         text-align: center;
         margin-bottom: 5%;
         padding-bottom: 3%;
+    }
+    option {
+        font-size: 10px;
     }
 }
