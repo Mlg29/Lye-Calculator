@@ -32,7 +32,6 @@ class Result extends React.Component {
           trigger={() => <a href="#" className="print">
           <center><i class='fas fa-print'></i>Print this out!</center> </a>}
        content={() => this.componentRef}
-          content={() => this.componentRef}
         />
         <ComponentToPrint 
             ref={el => (this.componentRef = el)}
@@ -57,7 +56,9 @@ class Result extends React.Component {
     }
     
 }
+
 export default Result
+
 class ComponentToPrint extends React.Component {
     
     render() {
@@ -75,7 +76,7 @@ class ComponentToPrint extends React.Component {
             totalOil, 
             oilSelected
         } = this.props
-        console.log(this.props)
+        
             function fragnance() {
                             switch(fragrance) {
                             case "None":
