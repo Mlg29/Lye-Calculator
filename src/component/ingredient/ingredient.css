@@ -34,6 +34,21 @@
     width: 100%;
 }
 
+.lye-btn1{
+    background-color: black;
+    color: white;
+}
+.try1{
+    color: black;
+
+}
+.images{
+   color: #000;
+}
+#image{
+    background-color: black;
+    color: #81b7b6;
+}
 
 @media screen and (max-width: 1000px) {
     .ingredient-div {

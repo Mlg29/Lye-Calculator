@@ -57,6 +57,12 @@
 strong {
     float: right;
 }
+.print{
+    
+    color: blanchedalmond;
+    text-decoration: none;
+    
+}
 
 @media screen and (max-width: 1000px) {
     .result-paragraph{

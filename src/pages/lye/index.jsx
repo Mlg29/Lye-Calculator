@@ -39,12 +39,13 @@ class Lye extends React.Component {
                
                 <p className="lye-paragraph">Calculate your lye or fragrance amounts for the perfect batch!</p>
                 <div className="btn">
-                    <button className="lye-btn1">LYE CALCULATOR</button>
+                <h2 className="lye-btn7">LYE CALCULATOR</h2>
                    
                 </div>
-                <h2 className="lye-header2">Lye Calculator</h2>
+                
                 <div className="lye-div2">
                     <p className="lye-paragraph2">Calculate the amount of lye and fragrance that you need to make beautiful soaps.</p>
+
                     <p className="lye-paragraph2">*Note: Genesis formulab Lye Calculator assumes a 90% 
                         purity for Potassium Hydroxide (liquid soapmaking) and 97%
                         purity for Sodium Hydroxide (solid bar soapmaking). These 
