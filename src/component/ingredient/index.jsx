@@ -4,9 +4,8 @@ import Result from "../Result"
 
 
 class Ingredient extends React.Component {
-    constructor() {
-        super()
-        this.state = {
+    
+        state = {
             isLoading: false,
             isImage: true,
             almond: "",
@@ -51,14 +50,13 @@ class Ingredient extends React.Component {
             peanut: ""
             
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.loading = this.loading.bind(this)
-    }
-    handleChange(e) {
+       
+    
+    handleChange = (e) => {
         const { name, value} = e.target
         this.setState({[name]: value})
     }
-    loading(e) {
+    loading = (e) => {
         e.preventDefault()
         this.setState({isImage: false})
         setTimeout(() => {
@@ -85,9 +83,10 @@ class Ingredient extends React.Component {
         const totalAmountOfWaterLiquid = (totalAmountOfLyeLiquid / 0.3) - totalAmountOfLyeLiquid
         const superfattingValueLiquid = totalAmountOfLyeLiquid * (1 - (level / 100))
         
-        const totalOil = (almond * 1) + (aloeVera * 1) + (apricot * 1 ) + (avocado * 1 ) + (babassu * 1) + (baobab * 1) + (blackCumin * 1) + (blackCurrant * 1) + (borage * 1) + (brazilNut * 1) + (camelina * 1) + (canola * 1) + (castor * 1) + (cherryKernel * 1) + (cottenseed * 1) + (cocoaButter * 1) + (coconut * 1) + (corn * 1) + (cranberrySeed * 1) + (emu * 1) + (eveningPrimrose * 1) + (flax * 1) + (grapeSeed *1) + (hazelnut * 1) + (illipeButter * 1) + (jojoba * 1) + (kiwiSeed * 1) + (kokumButter * 1) + (kukuiNut * 1) + (lard * 1) + (macadamiaNut * 1) + (mangoButter * 1) + (marulaOil * 1) + (mowrahButter * 1) + (neem * 1) + (olive * 1) + (palm * 1) + (palmKernel * 1) + (peanut * 1) 
-        
-       
+        const totalOil = (almond * 1) + (aloeVera * 1) + (apricot * 1 ) + (avocado * 1 ) + (babassu * 1) + (baobab * 1) + (blackCumin * 1) + (blackCurrant * 1) + (borage * 1) + (brazilNut * 1) + (camelina * 1) + (canola * 1) + (castor * 1) + (cherryKernel * 1) + (cottenseed * 1) + (cocoaButter * 1) + (coconut * 1) + (corn * 1) + (cranberrySeed * 1) + (emu * 1) + (eveningPrimrose * 1) + (flax * 1) + (grapeSeed *1) + (hazelnut * 1) + (illipeButter * 1) + (jojoba * 1) + (kiwiSeed * 1) + (kokumButter * 1) + (kukuiNut * 1) + (lard * 1) + (macadamiaNut * 1) + (mangoButter * 1) + (marulaOil * 1) + (mowrahButter * 1) + (neem * 1) + (olive * 1) + (palm * 1) + (peachKernel * 1) + (palmKernel * 1) + (peanut * 1) 
+        const oilSelected = this.state
+        console.log(this.state)
+
         return (
             <div className="ingredient">
                 
@@ -229,8 +228,10 @@ class Ingredient extends React.Component {
                                     totalAmountOfWaterLiquid = {totalAmountOfWaterLiquid}
                                     superfattingValueLiquid = {superfattingValueLiquid}
                                     totalOil = {totalOil}
+                                    oilSelected = {oilSelected}
                                 
                                 />    
+                            
                                 </div>             
                           </div> 
                           :   isImage ? '' :
