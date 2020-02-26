@@ -28,30 +28,31 @@
 .result-paragraph {
     padding: 12px;
     color: rgb(48, 43, 43);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     background: grey;
-    width: 90%;
+    width: 80%;
     margin-bottom: 5%;
 }
 .result-paragraph2 {
     padding: 12px;
     color: rgb(48, 43, 43);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     margin-top: -5%;
     background: lightgray;
-    width: 90%;
+    width: 80%;
     margin-bottom: 5%;
 }
 .result-paragraph3 {
     padding: 12px;
     color: rgb(48, 43, 43);
-    font-size: 20px;
+    font-size: 15px;
     margin-top: -5%;
+    margin-left: -1%;
     font-weight: normal;
     background: grey;
-    width: 90%;
+    width: 80%;
     margin-bottom: 5%;
 }
 strong {
@@ -65,13 +66,27 @@ strong {
 }
 
 @media screen and (max-width: 1000px) {
+    .result {
+        /*new*/
+        width: 80%;
+        padding-left: 10%;
+    }
+    .result-header2 {
+        /*new*/
+        font-size: 10px;
+        width: 80%;
+    }
     .result-paragraph{
-        font-size: 15px;
+        font-size: 9px;
     }
     .result-paragraph2 {
-        font-size: 15px;
+        font-size: 8px;
+        margin-left: 1%;
     }
     .result-paragraph3 {
-        font-size: 15px;
+        font-size: 9px;
+    }
+    .oil-selected {
+        margin-left: -5%;
     }
 }

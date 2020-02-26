@@ -90,125 +90,125 @@ class Ingredient extends React.Component {
         return (
             <div className="ingredient">
                 
-                <h1>INGREDIENTS</h1>
+                <h1 className="ingred">INGREDIENTS</h1>
 
-                <p>What are your Oil ingredient amounts by weight (measured in grams)</p>
+                <p className="ingred-paragraph">What are your Oil ingredient amounts by weight (measured in grams)</p>
 
                 
                     <div className="ingredient-div">
-                      <div className="ingredient-div-div"><label>Aloe Vera Oil</label><input name="aloeVera" value={aloeVera} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                      <div className="ingredient-div-div"><label>Apricot Kernel Oil</label><input name="apricot" value={apricot} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                      <div className="ingredient-div-div"><label className="label">Aloe Vera Oil</label><input name="aloeVera" value={aloeVera} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                      <div className="ingredient-div-div"><label className="label">Apricot Kernel Oil</label><input name="apricot" value={apricot} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                        
                     </div>
                    <div className="ingredient-div">
-                       <div className="ingredient-div-div"><label>Avocado Oil</label><input name="avocado" value={avocado} onChange={this.handleChange} className="ingredient-input1" type="text" /></div> 
-                       <div className="ingredient-div-div"><label>Babassu Oil</label><input name="babassu" value={babassu} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                       <div className="ingredient-div-div"><label className="label">Avocado Oil</label><input name="avocado" value={avocado} onChange={this.handleChange} className="ingredient-input1" type="text" /></div> 
+                       <div className="ingredient-div-div"><label className="label">Babassu Oil</label><input name="babassu" value={babassu} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                         
                     </div>
                     <div className="ingredient-div">
-                        <div className="ingredient-div-div"><label>Baobab Oil</label><input name="baobab" value={baobab} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>                
-                        <div className="ingredient-div-div"><label>Black Cumin Oil</label><input  name="blackCumin" value={blackCumin} onChange={this.handleChange} className="ingredient-input1"  type="text" /></div>
+                        <div className="ingredient-div-div"><label className="label">Baobab Oil</label><input name="baobab" value={baobab} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>                
+                        <div className="ingredient-div-div"><label className="label">Black Cumin Oil</label><input  name="blackCumin" value={blackCumin} onChange={this.handleChange} className="ingredient-input1"  type="text" /></div>
                                       
                     </div>
                                     <div className="ingredient-div">
 
-                                          <div className="ingredient-div-div"><label>Blackcurrant Oil</label><input  name="blackCurrant" value={blackCurrant} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                          <div className="ingredient-div-div"><label>Borage Oil</label><input  name="borage" value={borage} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Blackcurrant Oil</label><input  name="blackCurrant" value={blackCurrant} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Borage Oil</label><input  name="borage" value={borage} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                        
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                        <div className="ingredient-div-div"><label>Brazil Nut Oil</label><input  name="brazilNut" value={brazilNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                        <div className="ingredient-div-div"><label>Camelina Oil</label><input  name="camelina" value={camelina} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Brazil Nut Oil</label><input  name="brazilNut" value={brazilNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Camelina Oil</label><input  name="camelina" value={camelina} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                       
 
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                          <div className="ingredient-div-div"> <label>Canola Oil</label><input  name="canola" value={canola} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                          <div className="ingredient-div-div"><label>Castor Oil</label><input  name="castor" value={castor} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"> <label className="label">Canola Oil</label><input  name="canola" value={canola} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Castor Oil</label><input  name="castor" value={castor} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                      
                                        
                                     </div>
                                     <div className="ingredient-div">
-                                           <div className="ingredient-div-div"> <label>Cherry Kernel Oil</label><input  name="cherryKernel" value={cherryKernel} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                           <div className="ingredient-div-div"> <label>Cottonseed Oil</label><input  name="cottenseed" value={cottenseed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                           <div className="ingredient-div-div"> <label className="label">Cherry Kernel Oil</label><input  name="cherryKernel" value={cherryKernel} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                           <div className="ingredient-div-div"> <label className="label">Cottonseed Oil</label><input  name="cottenseed" value={cottenseed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                       
                                        
                                     </div>
                                     <div className="ingredient-div">
-                                          <div className="ingredient-div-div"><label>Cocoa Butter</label><input  name="cocoaButter" value={cocoaButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                          <div className="ingredient-div-div"><label>Coconut Oil</label><input  name="coconut" value={coconut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Cocoa Butter</label><input  name="cocoaButter" value={cocoaButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Coconut Oil</label><input  name="coconut" value={coconut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                       
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                          <div className="ingredient-div-div"> <label>Corn Oil</label><input  name="corn" value={corn} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                          <div className="ingredient-div-div"><label>Cranberry Seed Oil</label><input  name="cranberrySeed" value={cranberrySeed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Corn Oil</label><input  name="corn" value={corn} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Cranberry Seed Oil</label><input  name="cranberrySeed" value={cranberrySeed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                        
                                     </div>
                                     <div className="ingredient-div">
-                                        <div className="ingredient-div-div"><label>Emu Oil</label><input  name="emu" value={emu} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>   
-                                        <div className="ingredient-div-div"><label>Evening Primrose Oil</label><input  name="eveningPrimrose" value={eveningPrimrose} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Emu Oil</label><input  name="emu" value={emu} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>   
+                                        <div className="ingredient-div-div"><label className="label">Evening Primrose Oil</label><input  name="eveningPrimrose" value={eveningPrimrose} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                        <div className="ingredient-div-div"><label>Flax/Linseed Oil</label><input  name="flax" value={flax} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                        <div className="ingredient-div-div"><label>Grapeseed Oil</label><input  name="grapeSeed" value={grapeSeed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div> 
+                                        <div className="ingredient-div-div"><label className="label">Flax/Linseed Oil</label><input  name="flax" value={flax} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Grapeseed Oil</label><input  name="grapeSeed" value={grapeSeed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div> 
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                       <div className="ingredient-div-div"><label>Hazelnut Oil</label><input  name="hazelnut" value={hazelnut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                        <div className="ingredient-div-div"><label>Illipe Butter</label><input  name="illipeButter" value={illipeButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                       <div className="ingredient-div-div"><label className="label">Hazelnut Oil</label><input  name="hazelnut" value={hazelnut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Illipe Butter</label><input  name="illipeButter" value={illipeButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                        
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                         <div className="ingredient-div-div"><label>Jojoba Oil</label><input  name="jojoba" value={jojoba} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                         <div className="ingredient-div-div"> <label>Kiwi Seed Oil</label><input  name="kiwiSeed" value={kiwiSeed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Jojoba Oil</label><input  name="jojoba" value={jojoba} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"> <label className="label">Kiwi Seed Oil</label><input  name="kiwiSeed" value={kiwiSeed} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                       
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                         <div className="ingredient-div-div"><label>Kokum Butter</label><input  name="kokumButter" value={kokumButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                         <div className="ingredient-div-div"><label>Kukui Nut Oil</label><input  name="kukuiNut" value={kukuiNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Kokum Butter</label><input  name="kokumButter" value={kokumButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Kukui Nut Oil</label><input  name="kukuiNut" value={kukuiNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                       <div className="ingredient-div-div"> <label>Lard Oil</label><input  name="lard" value={lard} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                       <div className="ingredient-div-div"><label>Macadamia Nut Oil</label><input  name="macadamiaNut" value={macadamiaNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                       <div className="ingredient-div-div"> <label className="label">Lard Oil</label><input  name="lard" value={lard} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                       <div className="ingredient-div-div"><label className="label">Macadamia Nut Oil</label><input  name="macadamiaNut" value={macadamiaNut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                       
                                        
                                     </div>
                                     <div className="ingredient-div">
-                                          <div className="ingredient-div-div"><label>Mango Butter</label><input  name="mangoButter" value={mangoButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                          <div className="ingredient-div-div"><label>Marula Oil</label><input  name="marulaOil" value={marulaOil} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Mango Butter</label><input  name="mangoButter" value={mangoButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                          <div className="ingredient-div-div"><label className="label">Marula Oil</label><input  name="marulaOil" value={marulaOil} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                        
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                         <div className="ingredient-div-div"> <label>Mowrah Butter</label><input  name="mowrahButter" value={mowrahButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                         <div className="ingredient-div-div"> <label>Neem Oil</label><input  name="neem" value={neem} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Mowrah Butter</label><input  name="mowrahButter" value={mowrahButter} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Neem Oil</label><input  name="neem" value={neem} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                        
                                        
                                     </div>
                                     <div className="ingredient-div">
-                                         <div className="ingredient-div-div"><label>Olive Oil</label><input  name="olive" value={olive} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                         <div className="ingredient-div-div"> <label>Palm Oil</label><input  name="palm" value={palm} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Olive Oil</label><input  name="olive" value={olive} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                         <div className="ingredient-div-div"><label className="label">Palm Oil</label><input  name="palm" value={palm} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                        <div className="ingredient-div-div"><label>Palm Kernel Oil</label><input  name="palmKernel" value={palmKernel} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
-                                        <div className="ingredient-div-div"><label>Peach Kernel Oil</label><input  name="peachKernel" value={peachKernel} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Palm Kernel Oil</label><input  name="palmKernel" value={palmKernel} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
+                                        <div className="ingredient-div-div"><label className="label">Peach Kernel Oil</label><input  name="peachKernel" value={peachKernel} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>
                                         
                                         
                                     </div>
                                     <div className="ingredient-div">
-                                        <div className="ingredient-div-div"> <label>Peanut Oil</label><input  name="peanut" value={peanut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>   
-                                        <div className="ingredient-div-div"><label>Sweet Almond Oil</label><input name="sweetalmond" value={sweetalmond} onChange={this.handleChange} className="ingredient-input1" type="text"/></div>
+                                        <div className="ingredient-div-div"><label className="label">Peanut Oil</label><input  name="peanut" value={peanut} onChange={this.handleChange} className="ingredient-input1" type="text" /></div>   
+                                        <div className="ingredient-div-div"><label className="label">Sweet Almond Oil</label><input name="sweetalmond" value={sweetalmond} onChange={this.handleChange} className="ingredient-input1" type="text"/></div>
                                   
                                     </div>
                                 
